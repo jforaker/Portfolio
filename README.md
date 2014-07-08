@@ -1,5 +1,5 @@
-Portfolio
+My Portfolio
 =========
 
-[Portfolio](http://jforaker.github.io/Portfolio/public/)
+[Check it out](http://jforaker.github.io/Portfolio/public/)
 ==================

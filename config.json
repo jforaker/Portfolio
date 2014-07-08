@@ -1,0 +1,24 @@
+{
+    "project": "Jake_Foraker_Resume",
+    "server": {
+        "port": 8000
+    },
+    "export": {
+        "path": "export",
+        "assetPrefix": "jake_foraker_resume"
+    },
+    "compass": {
+        "debugInfo": false,
+        "extensions": [
+            "toolkit",
+            "sassy-buttons",
+            "modular-scale",
+            "bourbon"
+        ]
+    },
+    "git": {
+        "defaultCommit": "Production build and commit",
+        "deployUpstream": "origin",
+        "deployBranch": "gh-pages"
+    }
+}

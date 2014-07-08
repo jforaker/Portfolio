@@ -1,11 +1,11 @@
 {
-    "project": "Jake_Foraker_Resume",
+    "project": "Jake_Foraker_Portfolio",
     "server": {
         "port": 8000
     },
     "export": {
         "path": "export",
-        "assetPrefix": "jake_foraker_resume"
+        "assetPrefix": "jake_foraker_portfolio"
     },
     "compass": {
         "debugInfo": false,

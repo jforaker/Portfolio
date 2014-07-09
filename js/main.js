@@ -5,16 +5,20 @@ jQuery(document).ready(function($){
     var skyconTop = new Skycons({
         "color": "white"
     });
-    //open team-member bio
+
+    //open project sidebar
     $('#cd-team').find('ul a').on('click', function(event){
         event.preventDefault();
         var selected = $(this).data('type');
         $('.cd-member-bio.'+selected+'').addClass('slide-in');
         $('.cd-member-bio-close').addClass('is-visible');
+        setTimeout(function(){
+            $('.repo').addClass('anim');
+        }, 276);
 
         // firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
         if( is_firefox ) {
-            $('main').addClass('slide-out').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+            $('main').addClass('slide-out').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                 $('body').addClass('overflow-hidden');
             });
         } else {
@@ -29,9 +33,11 @@ jQuery(document).ready(function($){
         event.preventDefault();
         $('.cd-member-bio').removeClass('slide-in');
         $('.cd-member-bio-close').removeClass('is-visible');
-
+        setTimeout(function(){
+            $('.repo').removeClass('anim');
+        }, 476);
         if( is_firefox ) {
-            $('main').removeClass('slide-out').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+            $('main').removeClass('slide-out').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                 $('body').removeClass('overflow-hidden');
             });
         } else {

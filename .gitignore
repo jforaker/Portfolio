@@ -5,3 +5,7 @@ components
 .sass-cache
 export
 .idea/
+public
+pages
+sass
+templates
